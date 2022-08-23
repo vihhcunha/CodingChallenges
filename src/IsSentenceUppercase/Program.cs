@@ -27,7 +27,7 @@ static bool IsUppercaseSentence(string? sentence)
     var sentenceASCIIBytes = Encoding.ASCII.GetBytes(sentence);
     for (var i = 0; i < sentenceASCIIBytes.Length; i++)
     {
-        if (sentenceASCIIBytes[i] < 65 || sentenceASCIIBytes[i] > 90)
+        if (sentenceASCIIBytes[i] < 'A' || sentenceASCIIBytes[i] > 'Z')
         {
             return false;
         }
